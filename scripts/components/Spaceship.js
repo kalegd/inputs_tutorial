@@ -32,7 +32,7 @@ export default class Spaceship {
     update(timeDelta) {
         if(global.sessionActive) {
             if(global.inputHandler.isScreenTouched()) {
-                this._pivotPoint.translateZ(this._speed * timeDelta);
+                this._pivotPoint.translateZ(-this._speed * timeDelta);
             }
         }
     }
